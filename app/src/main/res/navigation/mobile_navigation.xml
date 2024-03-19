@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.tchopmo.ui.home.HomeFragment"
+        android:label="@string/acceuil"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_pizzas"
+        android:name="com.example.tchopmo.ui.pizza.PizzasFragment"
+        android:label="@string/nos_pizzas"
+        tools:layout="@layout/fragment_pizzas" />
+
+    <fragment
+        android:id="@+id/nav_favourites"
+        android:name="com.example.tchopmo.ui.favorite.FavouriteFragment"
+        android:label="@string/favoris"
+        tools:layout="@layout/fragment_favourite" />
+    <fragment
+        android:id="@+id/nav_mon_Panier"
+        android:name="com.example.tchopmo.ui.MonPanierFragment"
+        android:label="@string/mon_pannier"
+        tools:layout="@layout/fragment_mon_panier" />
+</navigation>
